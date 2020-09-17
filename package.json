@@ -1,11 +1,16 @@
 {
-  "name": "vue-plugin",
+  "name": "vue-plugin-lhd",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "a demo of plugin",
+  "license": "MIT",
+  "main": "lib/vue-plugin-lhd.umd.min.js",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vue-plugin-lhd --dest lib src/plugins/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
